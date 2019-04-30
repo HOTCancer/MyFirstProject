@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
 	String uid;
 	TextView TX_MAIN;
 	ProgressDialog progressdialog;
-	private int copy_times = 2000;
+	private int copy_times = 1000;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -203,7 +203,8 @@ public class MainActivity extends Activity {
 				String hm_number = cur.getString(3);
 				String hm_sex 	= cur.getString(4);
 				String hm_class = cur.getString(5);
-				
+				String hm_class = cur.getString(6);
+	
 				File_Context = File_Context + hm_id +" 姓名："+ hm_name +"   性别："+hm_sex+"   年龄："+ hm_age+"   学号："+hm_number+"   班级："+hm_class+'\n';
 			}
 			
